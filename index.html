@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Киселева Алина — Программист</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="dust" id="dust"></div>
+  <div class="bubbles-container" id="bubblesContainer"></div>
+
+  <nav class="nav">
+    <div class="nav-links">
+      <a href="#about" class="nav-link">Обо мне</a>
+      <a href="#projects" class="nav-link">Проекты</a>
+      <a href="#skills" class="nav-link">Навыки</a>
+      <a href="#contacts" class="nav-link">Контакты</a>
+      <a href="https://github.com/alinakiseleva02" target="_blank" rel="noopener noreferrer" class="nav-link highlight">GitHub</a>
+    </div>
+    <button class="theme-btn" id="themeToggle" aria-label="Сменить тему">🌙</button>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <div class="hero-avatar-wrapper">
+        <img src="photo.jpg" alt="Фото" class="hero-avatar" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="hero-avatar-fallback">[Фото]</div>
+      </div>
+      
+      <div class="hero-text">
+        <h1 class="hero-name">Киселева Алина</h1>
+        <div class="typewriter-container">
+          <span class="typewriter" id="typewriter"></span><span class="cursor">|</span>
+        </div>
+        <p class="hero-tagline">Пишу код с 2022 года. Люблю компьютеры, программы и сложные задачи.</p>
+        
+        <div class="hero-actions">
+          <a href="#about" class="magnetic-btn primary">Узнать больше</a>
+          <a href="https://github.com/alinakiseleva02" target="_blank" rel="noopener noreferrer" class="magnetic-btn secondary">Мой GitHub</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="section">
+    <h2 class="section-title">Обо мне</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>Здравствуйте! Меня зовут <strong>Киселева Алина</strong>, и я учусь на программиста. Код пишу с 2022 года — начинала с простых скриптов на Python, а теперь спокойно работаю с фронтендом и бэкендом.</p>
+        <p>Очень люблю компьютеры, программы и всё, что можно запустить, сломать и починить. Мне нравится разбираться в том, как устроены вещи изнутри, и создавать что-то своё.</p>
+        <p>Сейчас активно ищу стажировку или junior-позицию, где смогу расти и приносить пользу команде.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-item">
+          <div class="stat-number" id="codeCounter">10000+</div>
+          <div class="stat-label">строк кода написано</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" id="projectCounter">25+</div>
+          <div class="stat-label">завершенных проектов</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Новый блок: Мои проекты -->
+  <section id="projects" class="section">
+    <h2 class="section-title">Мои проекты и опыт</h2>
+    <div class="projects-grid">
+      
+      <div class="project-card">
+        <div class="project-header">
+          <h3 class="project-title">Сайт для ООО «Русский лес»</h3>
+          <span class="project-badge">Оценка 10/10</span>
+        </div>
+        <p class="project-desc">Разработала корпоративный сайт для транспортной компании в Сургуте. Заказчик высоко оценил результат и удобство интерфейса.</p>
+        <div class="project-tech">
+          <span class="tag">HTML/CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Web Design</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <h3 class="project-title">Мобильное приложение PartyTime</h3>
+        </div>
+        <p class="project-desc">Приложение для бронирования игр для студии праздников «PartyTime» в Сургуте. Удобный выбор развлечений и интуитивно понятный интерфейс.</p>
+        <div class="project-tech">
+          <span class="tag">React Native</span>
+          <span class="tag">UI/UX</span>
+          <span class="tag">Mobile</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <h3 class="project-title">Преподаватель в KiberOne</h3>
+        </div>
+        <p class="project-desc">Работаю в Международной школе программирования KiberOne. Обучаю детей основам алгоритмики, логики и программирования в игровой форме.</p>
+        <div class="project-tech">
+          <span class="tag">Python</span>
+          <span class="tag">Scratch</span>
+          <span class="tag">Mentoring</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2 class="section-title">Навыки</h2>
+    <div class="skills-categories">
+      <div class="skill-category">
+        <h3>Языки программирования</h3>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">C++</span>
+          <span class="tag">Java</span>
+          <span class="tag">SQL</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3>Инструменты и технологии</h3>
+        <div class="tags">
+          <span class="tag">HTML/CSS</span>
+          <span class="tag">React</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">Git</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacts" class="section">
+    <h2 class="section-title">Контакты</h2>
+    <div class="contacts-grid">
+      
+      <a href="mailto:k_alinka28@mail.ru" class="contact-card">
+        <span class="contact-icon">✉️</span>
+        <span class="contact-label">k_alinka28@mail.ru</span>
+      </a>
+      
+      <a href="https://github.com/alinakiseleva02" target="_blank" rel="noopener noreferrer" class="contact-card">
+        <span class="contact-icon">💻</span>
+        <span class="contact-label">github.com/alinakiseleva02</span>
+      </a>
+      
+      <a href="https://t.me/sstay_05" target="_blank" rel="noopener noreferrer" class="contact-card">
+        <span class="contact-icon">✈️</span>
+        <span class="contact-label">@alinakiseleva02</span>
+      </a>
+      
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Киселева Алина. Сделано с любовью к коду и деталям.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
